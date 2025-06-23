@@ -1,1 +1,0 @@
-# SummerCampTeamProject1
