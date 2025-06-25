@@ -10,47 +10,65 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
  
-
-
+<body>
     <div> 
         <div class="tab">
-        <button class="tablinks" onclick="openAnim(event, 'mainAnim')" id="defaultOpen">Main Animaton</button>
-        <button class="tablinks" onclick="openAnim(event, 'anim2')">animation2</button>
-        <button class="tablinks" onclick="openAnim(event, 'anim3')">animation3</button>
+            <!--Show tabs with respectice title, in order 1st tab is 1st content (animation)-->
+            <button class="tablinks" onclick="openAnim(event, 'mainAnim')" id="defaultOpen">Main Animaton</button>
+            <button class="tablinks" onclick="openAnim(event, 'anim2')">Core Animations</button>
+            <button class="tablinks" onclick="openAnim(event, 'anim3')">animation3</button>
         </div>
 
+<!-- Name of specifict tab and animation reference-->
         <div id="mainAnim" class="tabcontent">
+            <div>
+                <p>
+                    <!-- Reference to the script for tab design-->
+                    <script src="script.js"></script>
+                    <!--Content of the tab / animation -->
+                            <h1>Animation Gallery</h1>
+                            <h3>This webpage is made by Beri, Hector, and Leo. we focus on making an animation while also trying add everything we know and learned. </h3>
+                            <a href="https://lmp6217.github.io/Personal/">BERI'S PERSONAL PAGE</a> <!--Beri add the link to your blog or personal page about you and make sure you make it to a page and add the https part as well-->
+                            <a href="https://csuc-cs-camp-2025.github.io/CS-Camp-25-Hector-Aripez-Acevedo/">HECTOR'S PERSONAL PAGE </a> <!--Hector add the link to your blog or personal page about you and make sure you make it to a page and add the https part as well-->
+                            <a href="https://lmp6217.github.io/Personal/">LEO'S PERSONAL PAGE</a>
+                </p>         
+            </div>
+        </div>
+
+<!--- Name of specifict tab and animation reference -->
+        <div id="anim2" class="tabcontent">
+            
+            <h3> Core Animations</h3>
+            <!--title of the tab / animation -->
             <body>
-                <script src="script.js"></script>
-                        <h1>Animation Gallery</h1>
-                        <h3>This webpage is made by Beri, Hector, and Leo. we focus on making an animation while also trying add everything we know and learned. </h3>
-                        <a href="https://lmp6217.github.io/Personal/">BERI'S PERSONAL PAGE</a> <!--Beri add the link to your blog or personal page about you and make sure you make it to a page and add the https part as well-->
-                        <a href="https://csuc-cs-camp-2025.github.io/CS-Camp-25-Hector-Aripez-Acevedo/">HECTOR'S PERSONAL PAGE </a> <!--Hector add the link to your blog or personal page about you and make sure you make it to a page and add the https part as well-->
-                        <a href="https://lmp6217.github.io/Personal/">LEO'S PERSONAL PAGE</a>
-                        
+                <p>
+                    <div id="animation-box"></div>
+                    <div class="controls">
+                        <button onclick="setAnimation('bounce')">Bounce</button>
+                        <button onclick="setAnimation('rotate')">Rotate</button>
+                        <button onclick="setAnimation('scale')">Scale</button>
+                        <button onclick="setAnimation('colorChange')">Color Change</button>
+                        <button onclick="setAnimation('none')">Stop</button>
+                    </div> 
+                </p>
             </body>
         </div>
 
-        <div id="anim2" class="tabcontent">
-            <h3> Core Animations</h3>
-            <p>
-                <div id="animation-box"></div>
-                <div class="controls">
-                    <button onclick="setAnimation('bounce')">Bounce</button>
-                    <button onclick="setAnimation('rotate')">Rotate</button>
-                    <button onclick="setAnimation('scale')">Scale</button>
-                    <button onclick="setAnimation('colorChange')">Color Change</button>
-                    <button onclick="setAnimation('none')">Stop</button>
-                </div> 
-            </p>
-        </div>
+        <!--- Name of specifict tab and animation reference -->
         <div id="anim3" class="tabcontent">
-            <h3>animation 2 title</h3>
+            
+            <h3>animation 3 title</h3>
+         
             <p> 
                 This is the space for html animation code
             </p> 
-        
-        <!--
+        </div>
+       
+
+    </div>
+</body>
+</html> 
+    <!--
         Famous countries
 
         France 
@@ -64,6 +82,3 @@
         Tailand
         germany
         -->
-
-</div>
-</html>
