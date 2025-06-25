@@ -90,8 +90,7 @@ button:hover {
     align-items: center;
 }
 
-/*Tabs*/
-
+/* Tabs */
 body {font-family: Arial;}
 
 /* Tab style */
@@ -105,7 +104,7 @@ body {font-family: Arial;}
 /* Buttons inside the tab */
 .tab button {
   background-color: inherit;
-  float: left;
+  float:inherit;
   border: none;
   outline: none;
   cursor: pointer;
@@ -120,7 +119,7 @@ body {font-family: Arial;}
   background-color: orange;
 }
 
-/* active/current tab link class */
+/* Active/current tab link class */
 .tab button.active {
   background-color: #5b48c5;
 }
@@ -129,3 +128,5 @@ body {font-family: Arial;}
 .tabcontent {
   display: none;
 }
+
+/* */
