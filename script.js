@@ -17,6 +17,16 @@ function openAnim(evt, animName) {
   evt.currentTarget.className += " active";
 }
 
+const box = document.getElementById('animation-box');
+
+function setAnimation(type) {
+  box.className = ''; // this line Reset all animations
+  if (type === 'combo') {
+    box.classList.add('combo');//this will change the cube fuction as the whole becasue of"cobo"
+  } else if (type !== 'none') {
+    box.classList.add(type);
+  }
+}
 // Get the element with and click on it
 document.getElementById("defaultOpen").click();
 
