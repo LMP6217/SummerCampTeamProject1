@@ -186,7 +186,7 @@ button {
 
  /* this brakes tag to infinite looping*/
 
-h3, h2{
+/*h3, h2 {
   position:absolute;
   top: 10%;
   height: -50%;
@@ -194,5 +194,5 @@ h3, h2{
   justify-content: start;
   text-align:end;
 }
-
+*/
 
