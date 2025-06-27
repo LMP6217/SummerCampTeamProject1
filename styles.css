@@ -1,39 +1,13 @@
 
 /*Main animation*/
 body {
-  background: #111;
+  background: #c51111cc;
+  animation: mymove 5s infinite;
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 40px;
 }
-
-title {
-margin-bottom: 30px;
-  animation-name: lasan;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes lasan{
-  10%  {color:yellow; left:200px; top:0px;}
-  20%  {color:blue; left:200px; top:200px;}
-  30%  {color:green; left:0px; top:200px;}
-  40% {color:orange; left:0px; top:0px;}
-  50%   {color:pink; left:0px; top:0px;}
-  60%  {color:gold; left:200px; top:0px;}
-  70%  {color:purple; left:200px; top:200px;}
-  80%  {color:white; left:0px; top:200px;}
-  90%   {color:red; left:0px; top:0px;}
-  100% {color:burlywood; left:0px; top:0px;}
-}
-
-.color {
-  margin-bottom: 30px;
-  animation-name: lasan;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-}
-
 
 #animation-box {
   width: 200px;
@@ -41,7 +15,16 @@ margin-bottom: 30px;
   margin: 0 auto 30px;
   border-radius: 20px;
   background: #3498db;
-  animation: none;
+  
+  
+
+  transition: 0.3s;
+  box-shadow: 6px 6px 18px 18px;
+  text-shadow:3px 2px 0px #222;
+  color: rgba(0, 0, 0, 0.962);
+  background-color: #222;
+  transform: perspective(500px)
+
 }
 
 .controls {
@@ -58,15 +41,33 @@ button {
   border: 2px solid #3498db;
   border-radius: 10px;
   cursor: pointer;
+  transition: background 0.3s;
+  /* this is a trial*/
   transition: 0.3s;
-}
+  box-shadow: 6px 6px 18px;
+  text-shadow:3px 2px 0px #222;
+  color: white;
+  background-color: #222;
+  transform: perspective(500x)
+  
 
+}
+/*
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}for font "doesnt work yet"
+*/
 button:hover {
   background: #3498db;
-  
+  animation: zoom 5s linear;
 }
 
 /* Animations */
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-100px); }
@@ -88,6 +89,7 @@ button:hover {
   100% { background: #e74c3c; }
 }
 
+/* Animation Classes */
 .bounce {
   animation: bounce 1s infinite;
 }
@@ -103,6 +105,11 @@ button:hover {
 .colorChange {
   animation: colorChange 3s infinite;
 }
+
+.combo {
+  animation: bounce 0.1s infinite, rotate 2s linear infinite, colorChange 3s infinite;
+}
+
 
 .flex-container{
     display: flex;
@@ -160,4 +167,22 @@ button {
   animation-iteration-count: infinite;
 }
 
+title {
+margin-bottom: 30px;
+  animation-name: lasan;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes lasan{
+  10%  {color:yellow; left:200px; top:0px;}
+  20%  {color:blue; left:200px; top:200px;}
+  30%  {color:green; left:0px; top:200px;}
+  40% {color:orange; left:0px; top:0px;}
+  50%   {color:pink; left:0px; top:0px;}
+  60%  {color:gold; left:200px; top:0px;}
+  70%  {color:purple; left:200px; top:200px;}
+  80%  {color:white; left:0px; top:200px;}
+  90%   {color:red; left:0px; top:0px;}
+  100% {color:burlywood; left:0px; top:0px;}
+}
 /* */
