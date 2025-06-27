@@ -182,3 +182,15 @@ button {
   100% {color:burlywood; left:0px; top:0px;}
 }
 /* */
+h2{
+  position:relative;
+  justify-content: space-around;
+  text-align:initial;
+}
+h2 span{
+  margin-bottom: 30px;
+  animation-name: lasan;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  
+}
