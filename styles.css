@@ -33,18 +33,7 @@ margin-bottom: 30px;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
-@keyframes lasan{
-  10%  {color:yellow; left:200px; top:0px;}
-  20%  {color:blue; left:200px; top:200px;}
-  30%  {color:green; left:0px; top:200px;}
-  40% {color:orange; left:0px; top:0px;}
-  50%   {color:pink; left:0px; top:0px;}
-  60%  {color:gold; left:200px; top:0px;}
-  70%  {color:purple; left:200px; top:200px;}
-  80%  {color:white; left:0px; top:200px;}
-  90%   {color:red; left:0px; top:0px;}
-  100% {color:burlywood; left:0px; top:0px;}
-}
+
 
 #animation-box {
   width: 200px;
@@ -171,28 +160,4 @@ button {
   animation-iteration-count: infinite;
 }
 
-@keyframes lasan{
-  10%  {color:yellow; left:200px; top:0px;}
-  20%  {color:blue; left:200px; top:200px;}
-  30%  {color:green; left:0px; top:200px;}
-  40% {color:orange; left:0px; top:0px;}
-  50%   {color:pink; left:0px; top:0px;}
-  60%  {color:gold; left:200px; top:0px;}
-  70%  {color:purple; left:200px; top:200px;}
-  80%  {color:white; left:0px; top:200px;}
-  90%   {color:red; left:0px; top:0px;}
-  100% {color:burlywood; left:0px; top:0px;}
-}
-
- /* this brakes tag to infinite looping*/
-
-/*h3, h2 {
-  position:absolute;
-  top: 10%;
-  height: -50%;
-  width: -60%;
-  justify-content: start;
-  text-align:end;
-}
-*/
-
+/* */
